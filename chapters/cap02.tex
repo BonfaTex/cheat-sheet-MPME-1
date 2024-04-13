@@ -1,7 +1,124 @@
 %!TEX root = ../main.tex
 
-% =================================================
-
-% \subsection{\color{red}Bho}
+\vspace{-0.5em}
 
 % =================================================
+
+\section{\color{red}Balance Equations}
+
+% =================================================
+
+\textbf{Conservation of mass.} Given a motion $\chi$, for every part $\pt_t=\chi(\pt_*,t)$ of our body we assume $\de m(\pt_*)=\de m(\pt_t)=\de m$, i.e.
+\begin{equation*}
+\rho_*(\underline{X})\, \de V_{\!_X} = \rho(\underline{x},t)\, \de V_x
+\end{equation*}
+
+Using a change of var. we obtain $\boxed{\rho_*=\rho J}$
+
+\smallskip
+
+By taking the material time derivative of the previous equation we obtain
+\begin{gather*}
+0=\dot{\rho}J+\rho \dot{J}=\dot{\rho}J+\rho J \text{div}\,\underline{v} \\
+\Longrightarrow\quad\boxed{\dot{\rho}+\rho\,\text{div}\,\underline{v}}\text{ or }\boxed{\rho'+\text{div}(\rho\, \underline{v})}\qquad\ \ 
+\end{gather*}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Time derivative of integral proportional to mass.} Under the mass-conservation law we have
+\begin{equation*}
+\frac{\de}{\de t}\int_{_{\pt_t}}\!\!\!  \rho\,\phi\ \de V_{x}=\int_{_{\pt_t}}\!\!\!  \rho\,\dot{\phi}\ \de V_{x} \tag{$\propto\!m$}
+\end{equation*}
+
+\textbf{\color{lavender(floral)}Proof.} See whiteboard 1 u.u
+
+\vspace{-0.5em}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Cauchy theory of stress.} Let $\underline{b}(\underline{x})$ \emph{density of body forces} and $\underline{s}(\underline{x},\underline{n}(\underline{x}))$ \emph{density of contact forces} be continuous in $\bt_t$. If
+\begin{equation*}
+\int_{_{\pt_t}}\!\!\! \underline{b}\ \de V_{x}+\int_{_{\partial \pt_t}}\!\!\!\!\! \underline{s}\ \de A_x=0 \qquad \forall\, \pt_t
+\end{equation*}
+then $\exists\ T(\underline{x})$ Cauchy stress tensor s.t. $\boxed{\underline{s}=T\, \underline{n}}$
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Balance of linear momentum.} The linear momentum is defined as
+\begin{equation*}
+\underline{Q}=\int_{_{\pt_t}}\!\!\! \rho\,\underline{v}\ \de V_x
+\end{equation*}
+
+The integral form of the first cardinal eqn is
+\begin{equation*}
+\int_{_{\pt_t}}\!\!\! \rho\,\dot{\underline{v}}\ \de V_x=\int_{_{\pt_t}}\!\!\! \underline{b}\ \de V_{x}+\int_{_{\partial \pt_t}}\!\!\!\!\! \underline{s}\ \de A_x\quad \forall\, \pt_t,t
+\end{equation*}
+
+and its local form is $\boxed{\rho\,\dot{\underline{v}}=\underline{b}+\text{div}\,T}$
+
+\medskip
+
+\textbf{\color{lavender(floral)}Proof.} See whiteboard 2 u.u
+
+\vspace{-0.5em}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Balance of angular momentum.} From the second cardinal eqn we deduce $T$ symmetric.
+
+\vspace{-0.5em}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Balance equations in referential form.} We define the Piola-Kirchhoff stress tensor $S$ as the tensor such that
+\begin{equation*}
+\int_{_{\Sigma_t}}\!\! S\,\underline{n}_*\ \de A_{_X}=\int_{_{\Sigma_*}}\!\! T\,\underline{n}\ \de A_x 
+\end{equation*}
+hence, using Nanson's formula, $\boxed{S=JTF^{\,\text{-}T}}$
+
+\medskip
+
+In this way, the local form of the balance of linear momentum becomes
+\begin{equation*}
+\boxed{\rho_*\,\ddot{\underline{x}}=\underline{b}_*+\text{Div}\,S}
+\end{equation*}
+
+\textbf{\color{lavender(floral)}Proof.} See whiteboard 3 u.u
+
+\vspace{-0.5em}
+
+\rule{0.31\textwidth}{0.2pt}
+
+\newcolumn
+
+\textbf{Kinetic energy thm.} The kinetic energy is
+\begin{equation*}
+T_k=\frac{1}{2} \int_{_{\pt_t}}\!\!\! \rho\,\underline{v}^2\ \de V_x
+\end{equation*}
+
+and there holds $\boxed{\dot{T}_k=\Pi^{\,\text{ext}}+\Pi^{\,\text{int}}}$ where
+\vspace{-0.8em}
+\begin{equation*}
+{\renewcommand*{\arraystretch}{2}
+\begin{array}{rl}
+\Pi^{\,\text{ext}}&=\Pi^{\,\text{body}}+\Pi^{\,\text{contact}} \\
+&=\displaystyle\int_{_{\pt_t}}\!\!\! \underline{b}\cdot \underline{v}\ \de V_{x}+\int_{_{\partial \pt_t}}\!\!\!\!\! \underline{s}\cdot \underline{v}\ \de A_x \\
+\Pi^{\,\text{int}}&=-\displaystyle\int_{_{\pt_t}}\!\!\! T\cdot L\ \de V_{x}=-\int_{_{\pt_t}}\!\!\! T\cdot D\ \de V_{x} \\
+&=-\displaystyle\int_{_{\pt_*}}\!\!\! S\cdot \dot{F}\ \de V_{\!_X}
+\end{array}}
+\end{equation*}
+
+\textbf{\color{lavender(floral)}Proof.} See whiteboard 4 u.u
+
+\vspace{-0.5em}
+
+\rule{0.31\textwidth}{1pt}
+
+
+
+

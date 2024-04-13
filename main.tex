@@ -20,6 +20,12 @@
   {\par\medskip\noindent\minipage{\linewidth}}
   {\endminipage\par\medskip}
 
+\newenvironment{absolutelynopagebreak}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
 \definecolor{forestgreen(web)}{rgb}{0.13, 0.55, 0.13}
 \definecolor{lavender(floral)}{rgb}{0.71, 0.49, 0.86}
 
@@ -35,6 +41,11 @@
 %\usepackage{wasysym}
 %\smiley{}
 
+\usepackage{euscript} % accedi a Euler usando \EuScript{}
+\newcommand{\pt}{\EuScript{P}}
+\newcommand{\bt}{\EuScript{B}}
+\renewcommand{\chi}{\EuScript{X}}
+\newcommand{\ti}{\EuScript{T}}
 
 % Bold
 \renewcommand{\AA}{\mathbb A}
@@ -157,7 +168,7 @@
 \renewcommand{\hat}{\widehat}
 
 % differenziale
-\newcommand{\dspace}{\ } % \, aggiunge un piccolo spazio
+\newcommand{\dspace}{\,} % \, aggiunge un piccolo spazio
 \newcommand{\de}{\mathrm{d}}
 \newcommand{\dx}{\dspace \de x}
 \newcommand{\dy}{\dspace \de y}
