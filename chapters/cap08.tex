@@ -1,0 +1,118 @@
+%!TEX root = ../main.tex
+
+% =================================================
+% =================================================
+
+\section{\texorpdfstring{\color{red}Linear Elasticity}{}}
+
+% =================================================
+% =================================================
+
+Here the focus is on the displacement $\underline{u}=\underline{x}-\underline{X}$. Since $\underline{x}(\underline{X},t)=\underline{X}+\underline{u}(\underline{X},t)$, the deformation gradient is $\boxed{F=I+\nabla_{\!\!_X} \underline{u}}$.  
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+We consider $\underline{u}$ and $\nabla \underline{u}$ as small quantities, i.e. $\underline{u}=o(\Ec)=\nabla\underline{u}$, and we neglet terms of $o(\Ec^2)$.
+
+\smallskip
+
+In this framework, $C$ (also $B$) becomes
+\vspace{-0.2em}
+\begin{equation*}
+\big(I+(\nabla \underline{u})^T\big) \big(I+\nabla \underline{u}\big)=I+2E+o(\Ec^2)
+\end{equation*}
+with $E:=\text{sym}\,\nabla\underline{u}$ \emph{infinitesimal strain tensor}.
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+The elastic law $T=\hat{T}(F)$ becomes
+\begin{equation*}
+\hat{T}(I+\nabla\underline{u})=\underbracket[0.5pt]{\hat{T}(I)}_{:=T_0}+\underbracket[0.5pt]{D_F\hat{T}(I)}_{:=\CC}\big[\nabla\underline{u}\big]+o(\nabla\underline{u}) 
+\end{equation*}
+that is the \emph{infinitesimal elasticity law}.
+
+\smallskip
+
+However, we assume $T_0=0$ (i.e. no pre-stress), thus we have
+\begin{equation*}
+\boxed{T=\CC\big[\nabla\underline{u}\big]}
+\end{equation*}
+
+the \emph{linear elasticity law}.
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+The \emph{linear elastic tensor} $\CC$ is
+\begin{align*}
+\CC:=D_F\hat{T}(I):\text{Lin}&\to\text{Sym} \\
+\nabla\underline{u}&\mapsto \CC\big[\nabla\underline{u}\big]=T
+\end{align*}
+
+Since $T$ is symmetric i.e. $T_{ij}=T_{ji}$ then
+\begin{equation*}
+C_{ijhk}=\left.\frac{\partial T_{ij}}{\partial F_{hk}}\right|_{F_{hk}=I_{hk}} =C_{jihk}
+\end{equation*}
+
+Moreover, from (PFI) and $T_0=0$ one can deduce $\CC\big[\Omega\big]=0$ for every $\Omega\in\text{Skw}$, implying that
+\begin{gather*}
+\CC\big[\nabla\underline{u}\big]=\CC\big[\text{sym}\,\nabla\underline{u}\big]+\cancel{\CC\big[\text{skw}\,\nabla\underline{u}\big]}=\CC[E] \\
+\leadsto\ \boxed{
+\begin{aligned}
+\CC:\text{Sym}&\to\text{Sym} \\
+E&\mapsto T
+\end{aligned}
+\qquad C_{jihk}=C_{ijhk}=C_{ijkh}
+}
+\end{gather*}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+$T$ and $S$ are equivalent (negligible difference).
+
+\rule{0.31\textwidth}{0.2pt}
+
+% =================================================
+
+\subsection{\texorpdfstring{\color{red}Isotropic Linear Elasticity}{}}
+
+% =================================================
+
+\textbf{Costitutive law and simmetry group.} \\
+$\qquad T=\hat{T}(F)=\CC[E]\qquad G=\text{SO}(3)$
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{PFI.} $\boxed{Q\CC[E]Q^T=\CC[QEQ^T]\quad \forall\,Q\in\text{SO}(3)}$
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Thm (representation).} 
+\begin{equation*}
+\boxed{\CC[E]=\lambda(\text{tr}\,E)I+2\mu E}
+\end{equation*}
+where $\lambda,\,\mu$ are the Lamé constants.
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Balance equations.} From $\rho_*\ddot{\underline{x}}=\text{Div}\,S+\underline{b}_*$ we obtain the Navier equation
+\begin{equation*}
+\boxed{\rho_*\ddot{\underline{u}}=(\lambda+\mu)\nabla\big(\text{Div}\,\underline{u}\big)+\mu\,\Delta \underline{u}+\underline{b}_*}
+\end{equation*}
+
+\rule{0.31\textwidth}{1pt}
+
+
+
+
+
+
+
+
+

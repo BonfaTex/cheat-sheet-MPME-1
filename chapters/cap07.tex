@@ -1,0 +1,114 @@
+%!TEX root = ../main.tex
+
+\vspace{-1em}
+
+% =================================================
+% =================================================
+
+\section{\texorpdfstring{\color{red}Termomechanics}{}}
+
+% =================================================
+% =================================================
+
+\textbf{The first law of thermodynamics.} It represents a balance of energy
+\begin{equation*}
+\dot{T_k}(\pt_t)+\dot{\Uc}(\pt_t)=Q(\pt_t)+\Pi^{\,\text{ext}}(\pt_t)
+\end{equation*}
+Using the kinetic energy thm $\dot{T_k}=\Pi^{\,\text{ext}}+\Pi^{\,\text{int}}$
+\begin{equation*}
+\boxed{Q(\pt_t)=\dot{\Uc}(\pt_t)+\Pi^{\,\text{int}}(\pt_t)}
+\end{equation*}
+which, in its integral form is
+\begin{equation*}
+\int_{_{\pt_t}}\!\!\!\!\! \rho\,r\,\de V_x -\!\!\! \int_{_{\partial\pt_t}}\!\!\!\!\!\! \underline{q}\cdot \underline{n}\, \de A_x=\!\!\!\int_{_{\pt_t}}\!\!\!\!\!\rho\,\dot{e}\,\de V_x -\!\!\! \int_{_{\pt_t}}\!\!\!\!\! T\!\cdot\! D\,\de V_x
+\end{equation*}
+
+where $Q$ is the heat flowing into the body part given by the contribution of the \emph{heat source density} per unit mass $r(\underline{x},t)$ and the \emph{outgoing heat flux} $\underline{q}$ through the boundary, and $e$ is the \emph{internal energy density per unit mass}.
+
+\smallskip
+
+The local forms (using div. thm) are
+\begin{equation*}
+\boxed{
+\begin{array}{c}
+\rho\,r-\text{div}\,\underline{q}=\rho\,\dot{e}-T\cdot D \\
+\rho_*r-\text{Div}\,\underline{q}_*=\rho_*\dot{e}-S\cdot \dot{F}
+\end{array}
+}
+\tag{\RNum{1}}
+\end{equation*}
+
+where $\underline{q}_*=JF^{\,\text{-}1}\underline{q}$ is the heat flux in referential form which, as we did for Piola tensor, is st
+\begin{equation*}
+\int_{_{\partial\pt_t}}\!\!\!\! \underline{q}\cdot \underline{n}\ \de A_x= \int_{_{\partial\pt_*}}\!\!\!\! \underline{q}_*\!\!\cdot \underline{n}_*\ \de A_{_X}
+\end{equation*}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{The second law of thermodynamics.} It states the increase of entropy $\de S\geq\frac{\de Q}{T}$, due to the fact the entropy is $\de S=\frac{\de Q}{T}+\de S_{i}$ and the \emph{entropy production} $\de S_{i}\geq 0$.
+
+\smallskip
+
+\textbf{Rmk:} in reversible processes $\de S=\frac{\de Q}{T}$, instead in adiabatic processes $\de S=\de S_{i}\geq 0$. Moreover, one can rewrite the principle in the so called \emph{Clausius inequality} $\oint \frac{\de Q}{T} \leq 0$ .
+
+\smallskip
+
+By introducing $\vartheta(\underline{x},t)$ \emph{absolute temperature} and $\eta(\underline{x},t)$ \emph{entropy density per unit mass}, we write the integral form as
+\begin{equation*}
+\int_{_{\pt_t}}\!\!\!\!\! \rho\,\dot{\eta}\ \de V_x \geq
+\int_{_{\pt_t}}\!\!\! \frac{\rho\,r}{\vartheta}\ \de V_x -\!\! 
+\int_{_{\partial\pt_t}}\!\! \frac{\underline{q}}{\vartheta}\!\cdot \underline{n}\ \de A_x
+\end{equation*}
+
+or the local forms called \emph{Clausius-Duhem ineq.}
+\begin{equation*}
+\boxed{
+{\renewcommand*{\arraystretch}{1.5}
+\begin{array}{c}
+\rho\,\theta\,\dot{\eta}\geq\rho\,r-\text{div}\,\underline{q}+\frac{1}{\vartheta}\,\underline{q}\cdot\nabla\vartheta \\
+\rho_*\theta\,\dot{\eta}\geq\rho_*r-\text{Div}\,\underline{q}_*+\frac{1}{\vartheta}\,\underline{q}_*\!\cdot\nabla\vartheta
+\end{array}}
+} \tag{\RNum{2}}
+\end{equation*}
+
+where we used the div. thm and 
+\begin{equation*}
+\text{div}\left(\frac{\underline{q}}{\vartheta}\right)=\frac{1}{\vartheta}\,\text{div}\,\underline{q}-\frac{1}{\vartheta^2}\ \underline{q}\cdot\nabla \vartheta
+\end{equation*}
+
+Using (\RNum{1}) in (\RNum{2}) we get
+\begin{equation*}
+\boxed{
+{\renewcommand*{\arraystretch}{1.5}
+\begin{array}{c}
+\rho\,\theta\,\dot{\eta}\geq\rho\,\dot{e}-T\cdot D+\frac{1}{\vartheta}\,\underline{q}\cdot\nabla\vartheta \\
+\rho_*\theta\,\dot{\eta}\geq\rho_*\dot{e}-S\cdot\dot{F}+\frac{1}{\vartheta}\,\underline{q}_*\!\cdot\nabla\vartheta
+\end{array}}
+} \tag{\RNum{3}}
+\end{equation*}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Dissipation inequality.} $\psi:=e-\theta\eta$ \emph{Helmholtz free energy density}, then (\RNum{3}) becomes
+\begin{equation*}
+\boxed{
+\rho\,\dot{\psi}-T\cdot D+ \frac{1}{\vartheta}\ \underline{q}\!\cdot\!\nabla\vartheta+\rho\,\dot{\vartheta}\,\eta \leq 0
+} \tag{\RNum{4}} 
+\end{equation*}
+
+\rule{0.31\textwidth}{1pt}
+
+
+
+
+
+
+
+
+
+
+
+
+

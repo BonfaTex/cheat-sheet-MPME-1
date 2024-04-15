@@ -4,7 +4,7 @@
 
 % =================================================
 
-\section{\color{red}Costitutive Classes}
+\section{\texorpdfstring{\color{red}Costitutive Classes}{}}
 
 % =================================================
 
@@ -18,32 +18,15 @@ and the rigid motion $r$ is
 r(x,t)-r(y,t)=Q(t)[x-y]
 \end{equation*}
 
-with $Q(t)\in\text{SO}(3)$ called \emph{frame-rotation}, and $\Omega=\dot{Q}Q^T\in\text{Skw}$ called \emph{frame-spin}.
-\vspace{-0.5em}
-\begin{Figure}
-    \center{
-    \includegraphics[width=0.7\linewidth]{images/def4}\ \ }
-\end{Figure}
-\vspace{-0.5em}
-$\leadsto \chi^*(p,t)-\chi^*(q,t)=F^*(p,t)[p-q],\,\boxed{F^*=QF}$
-
-\smallskip
-
+$\leadsto \chi^*(p,t)-\chi^*(q,t)=F^*(p,t)[p-q],\,\boxed{F^*=QF}$ \\
+with $Q(t)\in\text{SO}(3)$ called \emph{frame-rotation}, and $\Omega=\dot{Q}Q^T\in\text{Skw}$ called \emph{frame-spin}. \\
 In general, we can prove the followings:
 \begin{equation*}
-\begin{array}{ll}
-C^*=C & B^*=QBQ^T \\
-T^*=QTQ^T & S^*=QS \\
-L^*=\Omega+QLQ^T & D^*=QDQ^T \\ 
-&W^*=\Omega+QWQ^T \\
-\end{array} \tag{$\circledast$}
+\begin{gathered}
+C^*=C\ \ B^*=QBQ^T\ \ T^*=QTQ^T \\
+L^*=\Omega+QLQ^T\ \ D^*=QDQ^T
+\end{gathered}    \tag{$\circledast$}
 \end{equation*}
-
-\textbf{\color{lavender(floral)}Proof.} See whiteboard 5 u.u
-
-\smallskip
-
-\textbf{Rmk:} by $(\circledast)$, one can call $C$ \emph{invariant} and $B,T,D$ \emph{frame-indifferent} or \emph{objective}.
 
 \rule{0.31\textwidth}{0.2pt}
 \smallskip
@@ -53,12 +36,7 @@ L^*=\Omega+QLQ^T & D^*=QDQ^T \\
 \rule{0.31\textwidth}{0.2pt}
 \smallskip
 
-\textbf{Principle of frame indifference (PFI).} "Physical laws be independent of the frame of reference", in other words
-\begin{equation*}
-(\chi,T)\in\Cc\ \Longleftrightarrow\ (\chi^*,T^*)\in\Cc  
-\end{equation*}
-
-where $\chi^*,\ T^*$ are obtained by superposed rbm.
+\textbf{Principle of frame indifference (PFI).} "Physical laws be independent of the frame of reference" i.e. $(\chi,T)\in\Cc\ \Leftrightarrow\ (\chi^*,T^*)\in\Cc$
 
 \rule{0.31\textwidth}{0.2pt}
 \smallskip
@@ -76,11 +54,11 @@ To avoid phisically unacceptable situations (when you deform a body in a single 
 \Gc=\left\{ H\in\text{SL}(3)\,:\,\ti(FH)=\ti(F)\ \forall\, F\in \text{Lin}^+ \right\}
 \end{equation*}
 
-\textbf{Thm.} Every $G$ st $\text{SL}(3)\subseteq G \subseteq \text{SO}(3)$ must either be $G=\text{SL}(3)$ or $G=\text{SO}(3)$ (there are no isotropic materials \emph{between} solids and fluids).
+We'll consider $G=\text{SL}(3)$ (fluids), $G\supseteq\text{SO}(3)$ (isotropic materials), $G\subseteq \text{SO}(3)$ (solids), $G=\text{SO}(3)$ (isotropic solids).
 
-\smallskip
+\smallskip 
 
-We'll consider $G=\text{SL}(3)$ (fluids), $G\supseteq\text{SO}(3)$ (isotropic materials), $G\subseteq \text{SO}(3)$ (solids), $G=\text{SO}(3)$ (isotropic solids).   
+\textbf{Thm.} Every $G$ st $\text{SO}(3)\subseteq G \subseteq \text{SL}(3)$ must either be $G=\text{SL}(3)$ or $G=\text{SO}(3)$ (there are no isotropic materials \emph{between} solids and fluids).  
 
 \rule{0.31\textwidth}{1pt}
 

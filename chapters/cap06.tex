@@ -1,0 +1,100 @@
+%!TEX root = ../main.tex
+
+\vspace{-1em}
+
+% =================================================
+% =================================================
+
+\section{\texorpdfstring{\color{red}Hyperelasticity}{}}
+
+% =================================================
+% =================================================
+
+\textbf{Def.} An elastic body is hyperelastic if there exists an \emph{elastic energy density per unit volume}
+\begin{equation*}
+\omega:\text{Lin}^+\to\RR\,, \qquad F\mapsto \omega(F)  
+\end{equation*}
+such that $\boxed{S=\nicefrac{\partial\omega}{\partial F}}$
+
+\smallskip
+
+$\leadsto\ S\cdot \dot{F}=\frac{\de\ \omega\big(F(\underline{x},t)\big)}{\de t}$, so $\Pi^{\,\text{int}}=-\frac{\de }{\de t}\int_{_{\pt_*}}\!\!\omega\ \de V_{_X}$
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Thm (characterization of hyperelastic body).} $\exists\,\omega$ iff $ \oint_{t_0}^{t_1} S\cdot\dot{F}\dt=0$
+for any mechanical process; this implies $\int S\cdot\dot{F}\dt$ depends only on the extremes.
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Potential elastic energy.} $\Uc(\pt_*)=\int_{_{\pt_*}}\!\!\omega\ \de V_{_X}$
+
+\smallskip
+
+By $(\propto\!m)$, we know $\Pi^{\,\text{int}}=-\dot{\Uc}$, thus the kinetic energy thm becomes $\dot{T_k}+\dot{\Uc}=\Pi^{\,\text{ext}}$. Moreover, if external forces are conservative, i.e. $=\frac{\de \Vc}{\de t}$, then the thm simply is $\frac{\de}{\de t}\ (T_k+\Uc+\Vc)=0$.
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip 
+
+One can rewrite using $\sigma(F)$ \emph{energy density per unit mass} st $\omega(F)=\rho_*\sigma(F)$, for istance
+\vspace{-0.5em}
+\begin{equation*}
+\Uc=\int_{_{\pt_*}}\!\!\!\!\omega\ \de V_{_X}=\int_{_{\pt_*}}\!\!\!\!\rho_*\sigma\ \de V_{_X}=\int_{_{\pt_*}}\!\!\!\!\rho\,\sigma\ \de V_x
+\end{equation*}
+\vspace{-0.5em}
+\rule{0.31\textwidth}{0.2pt}
+
+\newcolumn
+
+\textbf{PFI.} $\omega(F)=\omega(QF)$ $\forall Q\in\text{SO}(3)$
+
+\smallskip
+
+\textbf{Thm.} (PFI) $\Longleftrightarrow$ $T$ symmetric.
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+Thanks to polar decomposition thm
+\vspace{-1em}
+
+\begin{equation*}
+\omega(F)=\omega(QF)=\omega(QRU)\overset{Q=R^T}{=}\omega(U)
+\end{equation*}
+and $C=F^TF=U^2$ $\leadsto$ $\boxed{\omega=\hat{\omega}(C)}$
+
+\smallskip
+
+The advantage is that in this form the (PFI) is automatically satisfied, and in addiction
+\begin{equation*}
+\boxed{S=2F\,\textstyle\frac{\partial\,\hat{\omega}}{\partial C}}
+\end{equation*}
+
+and $T$ follows from $T=J^{\text{-}1}SF^T$.
+
+\smallskip
+
+With isotropic incompressible hyperel. materials
+\begin{align*}
+S&=-pF^{\,\text{-}T}+\textstyle\frac{\partial\,\omega}{\partial F} \\  
+T&=-p\,I+\textstyle\frac{\partial\,\omega}{\partial F}\,F^T
+\end{align*}
+
+
+\rule{0.31\textwidth}{1pt}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

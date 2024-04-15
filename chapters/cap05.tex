@@ -1,0 +1,120 @@
+%!TEX root = ../main.tex
+
+% =================================================
+% =================================================
+
+\section{\texorpdfstring{\color{red}Viscoelasticity}{}}
+
+% =================================================
+% =================================================
+
+\textbf{Costitutive law.} $T=\hat{T}(F,\dot{F})$ or, since $L=\dot{F}F^{\,\text{-}1}$ thus $\dot{F}=LF$, $T=\hat{T}(F,L)$.
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Thm.} (PFI) $\Longrightarrow$ $T=\hat{T}(F,D)$
+
+\rule{0.31\textwidth}{0.2pt}
+
+% =================================================
+
+\subsection{\texorpdfstring{\color{red}Viscoelastic Fluids}{}}
+
+% =================================================
+
+\textbf{Costitutive law and simmetry group.} \\
+$\qquad T=\hat{T}(F,D)\qquad G=\text{SL}(3)$
+
+Since $(FH)^\cdot(FH)^{\text{-}1}=L$ ($L$ not affected), the material simmetry implies only
+\begin{equation*}
+\hat{T}(F,D)=\hat{T}(FH,D)\quad\forall\,H\in\text{SL}(3)
+\end{equation*}
+
+Moreover, similar to perfect fluids, we have
+\begin{equation*}
+\boxed{\hat{T}(F,D)=\widetilde{T}(\rho,D)}
+\end{equation*}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{PFI.} $Q\widetilde{T}(\rho,D)Q^T=\widetilde{T}(\rho,QDQ^T)\quad\forall\,Q\in\text{SO}(3)$
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Thm (representation).}
+\begin{equation*}
+\boxed{\widetilde{T}(\rho,D)=\alpha_0 I+\alpha_1D+\alpha_2D^2}
+\end{equation*} 
+where $\alpha_k=\alpha_k(\rho,i_1,i_2,i_3)$.
+
+\smallskip
+
+This is the most general relation, namely for \emph{non-newtonian compressible fluids}. Now, we can do two more things:
+
+\smallskip
+
+$ \bullet $ add the incrompressibility constraint
+\begin{equation*}
+\text{det}\,F=1\ \Leftrightarrow\ \text{div}\,\underline{v}=0 \ \Leftrightarrow\ \text{tr}\,D=0
+\end{equation*}
+$\ \ $ obtaining $T_R=-p(\underline{x})I$ thus
+\begin{equation*}
+T=-p(\underline{x})I+\alpha_1(\rho,i_2,i_3)D+\alpha_2(\rho,i_2,i_3)D^2
+\end{equation*}
+$\ \ $ because $i_1(D)=0$.
+
+\smallskip
+
+$ \bullet $ make it linear with $\alpha_2=0$ and $\alpha_1=2\mu$, \\
+$\ \ $ obatining the representation for \emph{newtonian} \\
+$\ \ $ \emph{incompressible fluids}
+\begin{equation*}
+T=T_R+T_{\text{vis}}=-p(\underline{x})I+2\mu D
+\end{equation*}
+
+$\ \ \ \ \diamond$ here we derive NS eqns
+\begin{equation*}
+\begin{cases}
+\rho\,\dot{\underline{v}}=-\nabla p+\mu\,\Delta \underline{v}+ \underline{b} \\
+\text{div}\,\underline{v}=0
+\end{cases}
+\end{equation*}
+
+\rule{0.31\textwidth}{0.2pt}
+
+% =================================================
+
+\subsection{\texorpdfstring{\color{red}Isotropic Viscoelastic Solids}{}}
+
+% =================================================
+
+\textbf{Costitutive law and simmetry group.} \\
+$\qquad T=\hat{T}(F,D)\qquad G=\text{SO}(3)$
+
+Since $(FQ)^\cdot(FQ)^{\text{-}1}=L$ ($L$ not affected), the material simmetry implies only
+\begin{equation*}
+\hat{T}(F,D)=\hat{T}(FQ,D)\quad\forall\,Q\in\text{SO}(3)
+\end{equation*}
+
+Moreover, similar to elastic solids, we have
+\begin{equation*}
+\boxed{\hat{T}(F,D)=\widetilde{T}(B,D)}
+\end{equation*}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{PFI.} $Q\widetilde{T}(B,D)Q^T=\widetilde{T}(QBQ^T,QDQ^T)\quad\forall\,Q$
+
+\rule{0.31\textwidth}{1pt}
+
+
+
+
+
+
+
+

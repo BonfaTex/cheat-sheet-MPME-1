@@ -1,0 +1,100 @@
+%!TEX root = ../main.tex
+
+\vspace{-1em}
+
+% =================================================
+% =================================================
+
+\section{\texorpdfstring{\color{red}Finite Elasticity}{}}
+
+% =================================================
+% =================================================
+
+\textbf{Costitutive law.} $T=\hat{T}(F)$, where
+\begin{equation*}
+\hat{T}:\text{Lin}^+\to\text{Sym},\quad F\mapsto \hat{T}(F)=T
+\end{equation*}
+
+This forms a costitutive class (restriction), since given $\chi$ (i.e. given $F$), $T$ cannot not arbitrary. 
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{PFI.} From $T^*=\hat{T}(F^*)$ and $(\circledast)$ we deduce
+\begin{equation*}
+\boxed{Q\hat{T}(F)Q^T=\hat{T}(QF)\quad \forall\,Q\in\text{SO}(3)}
+\end{equation*}
+
+\textbf{Thm.} (PFI) $\Longleftrightarrow$ $\hat{T}(F)=R\,\widetilde{T}(U)R^T$
+
+\rule{0.31\textwidth}{0.2pt}
+
+% =================================================
+
+\subsection{\texorpdfstring{\color{red}Perfect Fluids}{}}
+
+% =================================================
+
+\textbf{Costitutive law and simmetry group.} \\
+$\qquad T=\hat{T}(F)\qquad G=\text{SL}(3)$
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Thm (representation).} $T$ is a function of $\rho$ only and it is in the form $\boxed{T=\alpha(\rho)I}$
+
+\rule{0.31\textwidth}{0.2pt}
+
+% =================================================
+
+\subsection{\texorpdfstring{\color{red}Isotropic Elastic Solids}{}}
+
+% =================================================
+
+\textbf{Costitutive law and simmetry group.} \\
+$\qquad T=\hat{T}(F)\qquad G=\text{SO}(3)$
+
+Thanks to polar decomposition thm
+\vspace{-1em}
+
+\begin{equation*}
+\hat{T}(F)=\hat{T}(VR)\overset{G}{=}\hat{T}(VRQ)\overset{Q=R^T}{=}\hat{T}(V)
+\end{equation*}
+and $B=FF^T=V^2$ $\leadsto$ $T=\widetilde{T}(B)$
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{PFI.} From $T^*=\hat{T}(B^*)$ and $(\circledast)$ we deduce
+\begin{equation*}
+\boxed{Q\widetilde{T}(B)Q^T=\widetilde{T}(QBQ^T)\quad \forall\,Q\in\text{SO}(3)}
+\end{equation*}
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Thm (representation).} 
+\begin{equation*}
+\boxed{\widetilde{T}(B)=\beta_0I+\beta_1B+\beta_2B^2}
+\end{equation*}
+
+where $\beta_k=\beta_k(i_1(B),i_2(B),i_3(B))$ and $i_1=\text{tr}\,B$, $i_2=\nicefrac{\left(\text{tr}^2 B- \text{tr}\,B^2\right)}{2}$, $i_3=\text{det}\,B$.
+
+\rule{0.31\textwidth}{0.2pt}
+\smallskip
+
+\textbf{Internal constraints.} They are $\varphi(F)=0$. The most important one gives incompressibility: $0=\varphi(F)=\text{det}\,F-1$ $\Longrightarrow$ $S_R=\alpha JF^{\,\text{-}T}$, $T_R=\alpha I$, thus
+\begin{equation*}
+\widetilde{T}(B)=\alpha I + \beta_1 (i_1,i_2)B+\beta_2(i_1,i_2)B^2
+\end{equation*} 
+because $i_3=\text{det}\,FF^T=\text{det}^2F=1$.
+
+\rule{0.31\textwidth}{1pt}
+
+
+
+
+
+
+
+
